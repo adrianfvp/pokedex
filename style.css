@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: rgb(54, 53, 53);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -81,6 +81,57 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.pokemon_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, #d8d69c, #20b7aa); 
+  color: white;
+  height: 800px;
+  width: 600px;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  filter: brightness(0.6);
+}
+
+.pokemon_card:hover {
+  filter: brightness(1);
+}
+
+.pokemon_card img {
+  height: 50%;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.pokemon_card h5 {
+  font-size: 4rem;
+  margin: 0;
+   
+}
+
+.pokemon_card span {
+  font-size: 1.5rem;
+  margin: 20px;
+  color: rgb(68, 68, 68);
+}
+
+.stats_elements {
+  background: #fffbed;
+  padding: 10px;
+  border-radius: 20px ;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 @media (prefers-color-scheme: light) {
